@@ -30,11 +30,10 @@ export const transformFormDataToAdvancedSearchRequestBody = (
   for (const [key, value] of Object.entries(formData)) {
     for (const [innerKey, innerValue] of Object.entries(value)) {
       const newKey = innerKey.replace(/^[^:]*:/, '');
-      const sectionKey =
-        key.split(':')[0] +
-        ':' +
-        key.split(':')[1].slice(0, 1).toUpperCase() +
-        key.split(':')[1].slice(1);
+      const parts = key.split(':');
+      const sectionKey = parts.length > 1
+        ? parts[0] + ':' + parts[1].charAt(0).toUpperCase() + parts[1].slice(1)
+        : key;
 
       body[sectionKey] = { ...body[sectionKey], '@type': key, [newKey]: innerValue };
     }
