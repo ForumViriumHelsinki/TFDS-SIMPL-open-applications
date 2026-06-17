@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@import '@simpl/vue-components/dist/assets/tailwind-theme.css';
+@import '@simpl/vue-components/dist/assets/base-theme.css';
+@import '@simpl/vue-components/dist/assets/primevue-theme.css';
+
+

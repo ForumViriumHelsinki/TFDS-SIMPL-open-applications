@@ -1,0 +1,11 @@
+---
+import ResourceDescriptionVersionsList from '@/components/ResourceDescriptionVersionsList.vue';
+import Layout from '@/layouts/Layout.astro';
+
+const id = Astro.params.resourceDescriptionId;
+const name = Astro.url.searchParams.get('name') ?? undefined;
+---
+
+<Layout title="Previous Versions">
+  <ResourceDescriptionVersionsList resourceDescriptionId={id} resourceDescriptionName={name} client:only="vue" />
+</Layout>

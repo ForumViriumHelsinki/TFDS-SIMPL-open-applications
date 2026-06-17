@@ -1,0 +1,55 @@
+---
+import { getPublicEnv } from '@/util/getEnv';
+import ToolbarWrapper from '@/components/ToolbarWrapper.vue';
+
+import '../styles/global.css';
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+// we set the environment variables in the window object so that they can be accessed by the client
+const envParams = getPublicEnv();
+const currentUrl = Astro.url.href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script define:vars={{ envParams }} is:inline>
+      window.envVars = envParams;
+    </script>
+    <script is:inline>
+      // This wouldn't work with importing the function from the util file, had to write it as inline
+      const currentUrl = new URL(window.location.toString());
+
+      if (
+        currentUrl.searchParams.has('code') ||
+        currentUrl.searchParams.has('session_state') ||
+        currentUrl.searchParams.has('iss') ||
+        currentUrl.searchParams.has('logout_delete_cookies')
+      ) {
+        currentUrl.searchParams.delete('code');
+        currentUrl.searchParams.delete('session_state');
+        currentUrl.searchParams.delete('iss');
+        currentUrl.searchParams.delete('logout_delete_cookies');
+
+        if (window.location.toString() !== currentUrl.toString()) {
+          window.location = currentUrl.toString();
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white">
+    <ToolbarWrapper currentUrl={currentUrl} client:load />
+    <main class="mx-auto mt-3 mb-5 max-w-screen-xl px-8 2xl:max-w-screen-2xl">
+      <slot />
+    </main>
+  </body>
+</html>
