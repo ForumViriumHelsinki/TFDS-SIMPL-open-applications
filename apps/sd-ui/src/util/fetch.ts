@@ -6,39 +6,6 @@
  * was called server-side.
  */
 
-/**
- * Creates an enhanced response proxy that adds custom headers
- */
-function createEnhancedResponse(response: Response, originalUrl: string): Response {
-  const customHeaders = new Headers(response.headers);
-  customHeaders.set('X-Original-URL', originalUrl);
-
-  return new Proxy(response, {
-    get(target, prop) {
-      if (prop === 'headers') {
-        return customHeaders;
-      }
-
-      // Handle clone method specially to preserve enhanced headers
-      if (prop === 'clone') {
-        return () => {
-          const clonedResponse = target.clone();
-          return createEnhancedResponse(clonedResponse, originalUrl);
-        };
-      }
-
-      const value = target[prop as keyof Response];
-
-      // Bind methods to the original response to maintain context
-      if (typeof value === 'function') {
-        return value.bind(target);
-      }
-
-      return value;
-    },
-  });
-}
-
 export const enhancedFetch = async (
   input: RequestInfo | URL,
   init?: RequestInit
@@ -54,5 +21,13 @@ export const enhancedFetch = async (
     originalUrl = input.url;
   }
 
-  return createEnhancedResponse(response, originalUrl);
+  const newHeaders = new Headers(response.headers);
+  newHeaders.set('X-Original-URL', originalUrl);
+
+  const hasNullBodyStatus = [101, 204, 205, 304].includes(response.status);
+  return new Response(hasNullBodyStatus ? null : response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers: newHeaders,
+  });
 };
