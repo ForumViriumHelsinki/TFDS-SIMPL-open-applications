@@ -37,7 +37,7 @@ export const getResourceDescriptionSummaryFromDocument = (
     : null;
 
   return {
-    id: resourceDescriptionDocument.credentialSubject['@id'] as string,
+    id: (resourceDescriptionDocument.credentialSubject?.['@id'] as string) ?? '',
     ...cleanedGeneralProperties,
     title: cleanedGeneralProperties?.title || cleanedGeneralProperties?.name,
     description: cleanedGeneralProperties?.description,
