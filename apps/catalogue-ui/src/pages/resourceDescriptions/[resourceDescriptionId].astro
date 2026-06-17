@@ -1,0 +1,10 @@
+---
+import ResourceDescription from '@/components/resourceDescription/ResourceDescription.vue';
+import Layout from '@/layouts/Layout.astro';
+
+const id = Astro.params.resourceDescriptionId;
+---
+
+<Layout title="Resource description" mainClass="relative">
+  <ResourceDescription id={id} client:load />
+</Layout>

@@ -1,0 +1,281 @@
+@prefix gax-validation: <http://w3id.org/gaia-x/validation#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix simpl: <http://w3id.org/gaia-x/simpl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gax-validation:SchemaConvertTestingShape a sh:NodeShape ;
+    sh:property [ skos:example "'(a structure object of type VisibleSection'" ;
+            sh:description "A section that has properties that'll be visible" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "visible section" ;
+            sh:node gax-validation:VisibleSectionShape ;
+            sh:order 1 ;
+            sh:path simpl:visibleSection ],
+        [ skos:example "'(a structure object of type EmptySection'" ;
+            sh:description "A section that has properties that'll be hidden" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "empty section" ;
+            sh:node gax-validation:EmptySectionShape ;
+            sh:order 1 ;
+            sh:path simpl:emptySection ],
+        [
+            simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'(a structure object of type HiddenSection'" ;
+            sh:description "A section that'll be hidden" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "hidden section" ;
+            sh:node gax-validation:HiddenSectionShape ;
+            sh:order 1 ;
+            sh:path simpl:hiddenSection ],
+        [
+            simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'(a structure object of type HiddenSection'" ;
+            sh:description "A section that'll be hidden" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "hidden section" ;
+            sh:node gax-validation:HiddenSectionShape ;
+            sh:order 1 ;
+            sh:path simpl:hiddenSection ];
+    sh:targetClass simpl:SchemaConvertTesting .
+
+gax-validation:VisibleSectionShape a sh:NodeShape ;
+    sh:property [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'http://provenanceURL.eu'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "Provenance" ;
+            sh:maxCount 1 ;
+            sh:name "produced by" ;
+            sh:order 1 ;
+            sh:path simpl:producedBy ;
+            sh:pattern "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'csv, xml'" ;
+            sh:datatype xsd:string ;
+            sh:description "Format under which the data is distributed (e.g. csv, xml, ?)." ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "format" ;
+            sh:order 2 ;
+            sh:path simpl:format ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'http://mysite/swagger-ui/index.html'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "Schema of the dataset, depends on the type of data for JSON it would be JSON Schema Description that states what fields the data has and the types." ;
+            sh:name "open api" ;
+            sh:order 3 ;
+            sh:path simpl:openApi ;
+            sh:pattern "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'http://mysite/swagger-ui/index.html'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "Additional Information about the dataset" ;
+            sh:maxCount 1 ;
+            sh:name "additional info" ;
+            sh:order 4 ;
+            sh:path simpl:additionalInfo ;
+            sh:pattern "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Text'" ;
+            sh:datatype xsd:string ;
+            sh:description "Related datasets" ;
+            sh:name "related datasets" ;
+            sh:order 5 ;
+            sh:path simpl:relatedDatasets ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Text'" ;
+            sh:datatype xsd:string ;
+            sh:description "Target users" ;
+            sh:name "target users" ;
+            sh:order 6 ;
+            sh:path simpl:targetUsers ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Text'" ;
+            sh:datatype xsd:string ;
+            sh:description "Data Quality (to include metrics such as completeness, accuracy, timeliness and other)" ;
+            sh:name "data quality" ;
+            sh:order 7 ;
+            sh:path simpl:dataQuality ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Text'" ;
+            sh:datatype xsd:string ;
+            sh:description "Encryption: Describes the encryption algorithms and keys used to secure the data" ;
+            sh:maxCount 1 ;
+            sh:name "encryption" ;
+            sh:order 8 ;
+            sh:path simpl:encryption ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Text'" ;
+            sh:datatype xsd:string ;
+            sh:description "Anonymization/pseudonymization: Indicates whether sensitive information has been anonymized or pseudonymized to protect privacy" ;
+            sh:maxCount 1 ;
+            sh:name "anonymization" ;
+            sh:order 9 ;
+            sh:path simpl:anonymization ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ],
+        [ simpl:configure ( "requiredOnFrontendOnly" ) ;
+            sh:datatype xsd:string ;
+            sh:description "This is a property that's only marked as required on the sdCreator frontend" ;
+            sh:maxCount 1 ;
+            sh:name "frontend only required property" ;
+            sh:order 10 ;
+            sh:path simpl:frontendOnlyRequiredProperty ],
+        [ sh:description "A string property with a pattern" ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "string with pattern" ;
+            sh:order 1 ;
+            sh:path simpl:stringWithPattern ;
+            sh:pattern "^[a-zA-Z]+$" ],
+        [ sh:description "An integer property" ;
+            sh:datatype xsd:integer ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "integer property" ;
+            sh:order 2 ;
+            sh:path simpl:integerProperty ],
+        [ sh:description "A boolean property" ;
+            sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "boolean property" ;
+            sh:order 3 ;
+            sh:path simpl:booleanProperty ],
+        [ sh:description "A date property" ;
+            sh:datatype xsd:date ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "date property" ;
+            sh:order 4 ;
+            sh:path simpl:dateProperty ],
+        [ sh:description "A URI property" ;
+            sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "URI property" ;
+            sh:order 5 ;
+            sh:path simpl:uriProperty ],
+        [ sh:description "A decimal property" ;
+            sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "decimal property" ;
+            sh:order 6 ;
+            sh:path simpl:decimalProperty ],
+        [ sh:description "A property with a fixed set of values" ;
+            sh:datatype xsd:string ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "fixed set property" ;
+            sh:order 7 ;
+            sh:path simpl:fixedSetProperty ;
+            sh:in ( "value1" "value2" "value3" ) ],
+        [ simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'Example hidden in frontend'" ;
+            sh:datatype xsd:string ;
+            sh:description "A property hidden in frontend" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "hidden property" ;
+            sh:order 1 ;
+            sh:path simpl:hiddenProperty ],
+        [ simpl:configure ( "useForAdvancedSearch" ) ;
+            skos:example "'Example for advanced search'" ;
+            sh:datatype xsd:string ;
+            sh:description "A property used for advanced search" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "advanced search property" ;
+            sh:order 2 ;
+            sh:path simpl:advancedSearchProperty ],
+        [ simpl:configure ( "requiredOnFrontendOnly" ) ;
+            skos:example "'Example required on frontend only'" ;
+            sh:datatype xsd:string ;
+            sh:description "A property required on frontend only" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "frontend only property" ;
+            sh:order 3 ;
+            sh:path simpl:frontendOnlyProperty ] ;
+    sh:targetClass simpl:VisibleSection .
+
+gax-validation:HiddenSectionShape a sh:NodeShape ;
+    sh:property [ simpl:configure ( "hiddenInFrontend" "useForAdvancedSearch" ) ;
+            skos:example "'application, data, infrastructure'" ;
+            sh:datatype xsd:string ;
+            sh:description "Offering type using for search" ;
+            sh:in ( "application" "data" "infrastructure" ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "offering type" ;
+            sh:order 6 ;
+            sh:path simpl:offeringType ],
+        [ simpl:configure ( "hiddenInFrontend" "useForAdvancedSearch" ) ;
+            skos:example "'Title'" ;
+            sh:datatype xsd:string ;
+            sh:description "A short text title for the dataset/application/infrastructure" ;
+            sh:maxCount 1 ;
+            sh:maxLength 255 ;
+            sh:minCount 1 ;
+            sh:minLength 1 ;
+            sh:name "name" ;
+            sh:order 1 ;
+            sh:path simpl:name ;
+            sh:pattern "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$" ] ;
+    sh:targetClass simpl:HiddenSection .
+
+gax-validation:EmptySectionShape a sh:NodeShape ;
+    sh:property [ simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'www.simpl.com'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "URL to the used license" ;
+            sh:maxLength 255 ;
+            sh:minCount 1 ;
+            sh:minLength 1 ;
+            sh:name "license" ;
+            sh:order 1 ;
+            sh:path simpl:license ;
+            sh:pattern "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)" ],
+        [ simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'BGN, EUR, CZK'" ;
+            sh:datatype xsd:string ;
+            sh:description "Price and conditions" ;
+            sh:in ( "BGN" "EUR" "CZK" "DKK" "HUF" "PLN" "RON" "SEK" ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "currency" ;
+            sh:order 2 ;
+            sh:path simpl:currency ],
+        [ simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'0, 1, 2'" ;
+            sh:datatype xsd:decimal ;
+            sh:description "Price and conditions" ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:minInclusive 0.0 ;
+            sh:maxInclusive 99999999.0 ;
+            sh:name "price" ;
+            sh:order 3 ;
+            sh:path simpl:price ],
+        [ simpl:configure ( "hiddenInFrontend" ) ;
+            skos:example "'free, commercial'" ;
+            sh:datatype xsd:string ;
+            sh:description "Price Type" ;
+            sh:in ( "free" "commercial" ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "price type" ;
+            sh:order 4 ;
+            sh:path simpl:priceType ] ;
+    sh:targetClass simpl:EmptySection .
