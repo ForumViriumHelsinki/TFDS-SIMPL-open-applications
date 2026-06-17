@@ -29,7 +29,6 @@ export const useResourceSharingMethodStore = defineStore('resourceSharingMethod'
     };
     await loadResourceAddressTemplates();
   };
-  };
 
   const resourceAddressTemplates = ref([] as any);
   const resourceAddressTemplatesError = ref<UIError | null>(null);
