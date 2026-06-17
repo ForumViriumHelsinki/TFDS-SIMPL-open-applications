@@ -7,11 +7,48 @@ import type { NodeObject } from 'jsonld';
 export const POST: APIRoute = async ({ request, cookies }) => {
   const token = cookies.get('token')?.value;
 
-  const data = (await request.json()) as {
-    selectedSchema: string;
-    templateId: string;
-    selfDescription: NodeObject;
-  };
+  let data;
+  try {
+    data = (await request.json()) as {
+      selectedSchema?: string;
+      templateId?: string;
+      selfDescription?: NodeObject;
+    };
+  } catch {
+    return createProblemDetailsResponse(
+      'invalid_request',
+      'Invalid JSON',
+      400,
+      'The request body must be a valid JSON object'
+    );
+  }
+
+  if (!data || typeof data !== 'object') {
+    return createProblemDetailsResponse(
+      'invalid_request',
+      'Invalid request body',
+      400,
+      'Request body must be a valid JSON object'
+    );
+  }
+
+  if (!data.selectedSchema || !data.templateId || !data.selfDescription) {
+    return createProblemDetailsResponse(
+      'invalid_request',
+      'Missing required fields',
+      400,
+      'selectedSchema, templateId, and selfDescription are required fields'
+    );
+  }
+
+  if (typeof data.selfDescription !== 'object' || !data.selfDescription['@id']) {
+    return createProblemDetailsResponse(
+      'invalid_request',
+      'Invalid selfDescription',
+      400,
+      'selfDescription must be an object containing a valid @id property'
+    );
+  }
 
   try {
     const transformedData = await transformData(
