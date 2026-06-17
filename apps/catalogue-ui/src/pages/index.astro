@@ -1,0 +1,12 @@
+---
+import PageHeader from '../components/PageHeader.vue';
+import Layout from '../layouts/Layout.astro';
+import SearchTabs from '../components/search/SearchTabs.vue';
+
+const search = Astro.url.searchParams.get('search') || '';
+---
+
+<Layout title="Search federated catalogue">
+  <PageHeader title="Search federated catalogue" />
+  <SearchTabs client:only="vue" search={search} />
+</Layout>

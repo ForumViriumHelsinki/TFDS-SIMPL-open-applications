@@ -1,0 +1,1205 @@
+{
+    "totalCount": 100,
+    "items": [
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHF_TEST_232"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0002"
+                ],
+                "offeringType": "data",
+                "name": "test 2025_0002",
+                "description": "test 2025_0002",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:6a79cd7e-64cb-422c-a08f-3e52f28abbfc"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_01347"
+                ],
+                "offeringType": "data",
+                "name": "specialOne",
+                "description": "Mock asset description",
+                "inLanguage": "de",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:692d5e95-b9fb-4139-8747-5b7a4ec74b3f"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0005"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:8a9bec34-3dde-487b-bc73-929ce053c65f"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:7b45f30a-4611-48a6-a671-ec0689dedd8e"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:eff8810a-64f8-4fa9-a8b3-688310d58ae9"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:2b855ee7-cd3e-4112-9df5-0ce8ea5420ac"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_015"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_0137801"
+                ],
+                "offeringType": "data",
+                "name": "Vlad API",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:bc31f218-1645-479d-84e2-f6d14182a5bd"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:b28edf2c-9694-4b46-b1b7-dcc3100c8e5c"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:54495f62-41aa-4a0b-9e7c-2ac7708a148d"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:dd219627-5732-44aa-9f16-4958d9e3ce74"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_013"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:71ffc984-d0d8-4670-8cc3-65fa60f148e1"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHF_TEST_223"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0007"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:093120ff-bdee-4ef2-89a8-5dcb8785d1a5"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:2e5f3687-5a6b-4a54-86bc-7096042f8ca9"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:1d89eb52-1e66-43fe-950d-5ae81ee1c5c8"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:4c39be2f-0e50-4ec8-934d-9433be8a111e"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0015"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0003"
+                ],
+                "offeringType": "data",
+                "name": "test 2025_0002",
+                "description": "test 2025_0002",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:6bfb5d29-04aa-4973-939b-81783ed54bb7"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:80d12011-e014-40cc-9918-0a4fa602a691"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_01346"
+                ],
+                "offeringType": "data",
+                "name": "specialOne",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_01345"
+                ],
+                "offeringType": "data",
+                "name": "specialOne",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:dd66cea4-c6fb-4543-997a-9de55c92fca0"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHF_TEST_222"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:4932c14d-cc2f-4556-b7fb-6f3b8b2c8cb4"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:da3019f3-e636-4cc6-8cda-a29e4b5d9ebf"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0006"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:964c5680-41f8-4bb3-86cd-2bb09ed2946e"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:e9dd119e-ded0-4fa7-8a22-98b3d64a0281"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:6c2ddd9f-b19a-49e8-b2f0-55ebfc614e5a"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:5f646f1f-d207-4232-a6fb-c7c01b16597d"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:37e41f8e-5407-4b86-bc79-145f51c8de61"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:b937654a-ea23-48f5-9c8b-401ac262930f"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:9a3b1a7f-8b77-4a67-881b-7abdbbedb6e4"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0008"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:0f4625e6-a4a6-423a-9e79-5cff1709c058"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:04dd5181-4b4c-4566-ac4f-30ad1405aeb2"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0001"
+                ],
+                "offeringType": "data",
+                "name": "test 2025_0002",
+                "description": "test 2025_0002",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHF_TEST_235"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_014"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:ea97114c-9a22-4d52-86b0-4d1cb0fa4780"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe"
+                ],
+                "offeringType": "data",
+                "name": "test 2025_0002",
+                "description": "test 2025_0002",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:b2e8d838-398e-4fda-8bc3-9a2373aea438"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:82043caf-bc2d-4580-bc88-e3063aa300be"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:5f83dc50-fb48-4bfc-a7eb-d5dfc5971b91"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:9d502ce7-0c98-46e4-a1e7-c78826bc57bc"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:e7a28a73-d5de-4567-9b92-df4d38e073ea"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:011b97ce-a641-47ec-8916-d7055b0d821b"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:cef08fcd-dee9-4d40-bd6d-a935014430de"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:dac49f6c-b129-453f-89ec-979fa1c6066c"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:c02faa40-719d-4c5a-b1be-d6d1f0f2845f"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:a94ef06c-a12d-4308-89aa-fffcd8a61126"
+                ],
+                "offeringType": "infrastructure",
+                "name": "text title infra",
+                "inLanguage": "da",
+                "description": "text description",
+                "serviceAccessPoint": "http://serviceaccesspoint.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:31deff88-f060-43cd-8e1f-3ba49f9edcdf"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:60c86c37-b633-4945-bb32-c248092674f1"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:c714ac70-4a4c-4c9e-8bcf-a8789200583c"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:362c0d03-ea51-4050-b8ed-f433e2e3c830"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:6901f2e0-9f90-4c19-8202-fabdf9c2bb4e"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:25453d95-99a9-4d8c-9941-279f845aa89d"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:dbbe90c0-dade-44a7-8ef1-c98669b97a79"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:9137de05-6dce-4398-80fc-595698d88fc7"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:5363c67c-4c83-4c39-acdf-08da7d9810d1"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:84bfd1a1-927a-4ad7-b004-2beb8458dd05"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:c835cc80-d137-4ea1-be3d-132f79361667"
+                ],
+                "offeringType": "infrastructure",
+                "name": "test",
+                "description": "des",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:ce465d7f-dbf4-4137-9285-e5a322ef9c99"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0009"
+                ],
+                "offeringType": "data",
+                "name": "test eng 2025",
+                "description": "test eng 2025",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:32570c2d-6012-4d38-818f-34dc55827f63"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHF_TEST_252"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:d7f3cfcb-c4d6-4e7c-bcf8-b80a532d8f07"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:6632c241-c5d0-4aa5-956e-a32f31e0fd15"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:87950c4a-a698-472c-bd10-7c959c6adccf"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:b3d25955-170b-462a-b047-55136dd50546"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:1bb12781-07e7-47fb-9a82-e9865b84041f"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:ba23f7fd-79bd-43d2-bcaf-b713bf7af4bc"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:d5a3ec77-ad51-4450-8c9b-3af75c0cbfe4"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:ec7c93cb-d3fc-4f28-ba52-187febc7e120"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:9162ce3e-fd48-4e1a-b2cb-bfb4bc1039fd"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:71516619-eb00-473c-a361-67eda0bb21c7"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_PRG_0137809"
+                ],
+                "offeringType": "data",
+                "name": "specialOne",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:eca8bd7a-f498-45f2-a38c-9d239780621a"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:926dd04a-1c6b-4297-a1bb-24d6e51aa84a"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_oinfKHe_ASFSAF_2243235"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:81c7e731-e877-427f-bc0c-f1c67a73ceac"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:40cc6834-34e1-4fb1-a86c-b268ca945c1c"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:c8be846c-7c12-42cb-ba29-47441d33bc63"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:af7e0151-43cc-429d-8677-26123cca88ac"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:8c8b1123-005b-4516-ba4a-44a8058f0a90"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:337e5efe-4819-4854-8bac-55a00ca7c928"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:3mwO1pOqDQ_fID9jc9Az1TS5JKIS_eng_0004"
+                ],
+                "offeringType": "data",
+                "name": "test 2025_0002",
+                "description": "test 2025_0002",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:6a6e4fb8-812b-4235-9a1b-c40ead656bb4"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:8520ed51-147e-4d57-a269-a579d936847e"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:InfrastructureOffering:704b5490-81dd-48ef-b04b-b1812b014a61"
+                ],
+                "offeringType": "infrastructure",
+                "name": "name",
+                "description": "description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://www.ap.com"
+            }
+        },
+        {
+            "n": {
+                "claimsGraphUri": [
+                    "did:web:registry.gaia-x.eu:DataOffering:8e04b9d0-1e7b-457b-99a3-1857a0368ecd"
+                ],
+                "offeringType": "data",
+                "name": "Mock 004",
+                "description": "Mock asset description",
+                "inLanguage": "en",
+                "serviceAccessPoint": "https://sd-ui.dev.simpl-europe.eu"
+            }
+        }
+    ]
+}

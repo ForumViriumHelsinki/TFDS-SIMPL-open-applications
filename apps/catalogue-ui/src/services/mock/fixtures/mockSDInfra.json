@@ -1,0 +1,109 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/jws-2020/v1"
+    ],
+    "credentialSubject": {
+        "@context": {
+            "gax-validation": "http://w3id.org/gaia-x/validation#",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "sh": "http://www.w3.org/ns/shacl#",
+            "simpl": "http://w3id.org/gaia-x/simpl#",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "@id": "did:web:registry.gaia-x.eu:InfrastructureOffering:e9dd119e-ded0-4fa7-8a22-98b3d64a0281",
+        "rdf:type": {
+            "@id": "simpl:InfrastructureOffering"
+        },
+        "simpl:contractTemplate": {
+            "rdf:type": {
+                "@id": "simpl:ContractTemplate"
+            },
+            "simpl:contractTemplateDocument": "Contract Template 1",
+            "simpl:contractTemplateHashAlg": "SHA256",
+            "simpl:contractTemplateHashValue": "22275fe551e7a16f5f2c1cc10d39a534f547323d877109d98b8e8730047bc5ed",
+            "simpl:contractTemplateURL": "https://files.dev.simpl-europe.eu/static/contract/ContractTemplate1.json"
+        },
+        "simpl:edcConnector": {
+            "simpl:providerEndpointURL": "https://edc-provider.dev.simpl-europe.eu/protocol"
+        },
+        "simpl:edcRegistration": {
+            "simpl:accessPolicyId": "245bfda6-b3ba-4cd8-b807-7c4c8ca75866",
+            "simpl:assetId": "11895582-f212-41bd-9c4f-458202ed723d",
+            "simpl:contractDefinitionId": "99496115-a23d-4293-98c6-8abc1eaa0950",
+            "simpl:servicePolicyId": "9ed8fb1e-30b1-46de-b222-1b60629b86e6"
+        },
+        "simpl:generalServiceProperties": {
+            "rdf:type": {
+                "@id": "simpl:GeneralServiceProperties"
+            },
+            "simpl:description": "description",
+            "simpl:inLanguage": "en",
+            "simpl:name": "name",
+            "simpl:offeringType": "infrastructure",
+            "simpl:serviceAccessPoint": {
+                "@type": "xsd:anyURI",
+                "@value": "https://www.ap.com"
+            },
+            "simpl:sharingMethodId": "HTTPDATA_PUSH"
+        },
+        "simpl:infrastructureProperties": {
+            "rdf:type": {
+                "@id": "simpl:InfrastructureProperties"
+            },
+            "simpl:deploymentScriptId": "12345678-1234-1234-1234-123456789012",
+            "simpl:externalUrl": {
+                "@type": "xsd:anyURI",
+                "@value": "https://external.eu"
+            },
+            "simpl:instanceType": "type",
+            "simpl:osAndImage": "image",
+            "simpl:provisionerApi": "https://api.eu",
+            "simpl:regionAndAz": "eu-west-1",
+            "simpl:resourceType": "vm",
+            "simpl:securitySettings": "security",
+            "simpl:storageType": "type"
+        },
+        "simpl:offeringPrice": {
+            "rdf:type": {
+                "@id": "simpl:OfferingPrice"
+            },
+            "simpl:currency": "EUR",
+            "simpl:license": {
+                "@type": "xsd:anyURI",
+                "@value": "https://www.license.com"
+            },
+            "simpl:price": {
+                "@type": "xsd:decimal",
+                "@value": 10
+            },
+            "simpl:priceType": "free"
+        },
+        "simpl:providerInformation": {
+            "rdf:type": {
+                "@id": "simpl:ProviderInformation"
+            },
+            "simpl:contact": "test@test.eu",
+            "simpl:providedBy": "id",
+            "simpl:signature": "signature"
+        },
+        "simpl:servicePolicy": {
+            "rdf:type": {
+                "@id": "simpl:ServicePolicy"
+            },
+            "simpl:access-policy": "{\"profile\":\"http://www.w3.org/ns/odrl/2/odrl.jsonld\",\"target\":\"11895582-f212-41bd-9c4f-458202ed723d\",\"assigner\":{\"uid\":\"provider\",\"role\":\"http://www.w3.org/ns/odrl/2/assigner\"},\"uid\":\"c351c00c-8b4d-44ed-a455-c22f47971f82\",\"@context\":\"http://www.w3.org/ns/odrl.jsonld\",\"@type\":\"Set\",\"permission\":[{\"target\":\"11895582-f212-41bd-9c4f-458202ed723d\",\"assignee\":{\"uid\":\"CONSUMER\",\"role\":\"http://www.w3.org/ns/odrl/2/assignee\"},\"action\":[\"http://simpl.eu/odrl/actions/consume\"],\"constraint\":[]}]}",
+            "simpl:usage-policy": "{\"profile\":\"http://www.w3.org/ns/odrl/2/odrl.jsonld\",\"target\":\"11895582-f212-41bd-9c4f-458202ed723d\",\"assigner\":{\"uid\":\"provider\",\"role\":\"http://www.w3.org/ns/odrl/2/assigner\"},\"uid\":\"fa4f004a-1bea-4296-8fcd-f683ec0a1332\",\"@context\":\"http://www.w3.org/ns/odrl.jsonld\",\"@type\":\"Set\",\"permission\":[{\"target\":\"11895582-f212-41bd-9c4f-458202ed723d\",\"assignee\":{\"uid\":\"CONSUMER\",\"role\":\"http://www.w3.org/ns/odrl/2/assignee\"},\"action\":[\"http://www.w3.org/ns/odrl/2/use\"],\"constraint\":[{\"leftOperand\":\"http://www.w3.org/ns/odrl/2/deletion\",\"operator\":\"http://www.w3.org/ns/odrl/2/eq\",\"rightOperand\":\"after_use\"}]}]}"
+        }
+    },
+    "issuanceDate": "2025-04-22T07:13:04.37336556Z",
+    "issuer": "did:web:did.dev.simpl-europa.eu",
+    "proof": {
+        "created": "2025-04-22T07:13:04.408611553Z",
+        "jws": "eyJhbGciOiJVbmRlZmluZWQiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..6e0c7g_3dYn8PoTg1ybbNfhu-6I7LJEUCgO88dKBxvZ02GE-b-pxAAh9HF0naZZ6vHf8Mqtwuhh4Yt1quL4qDw",
+        "proofPurpose": "assertionMethod",
+        "type": "JsonWebSignature2020",
+        "verificationMethod": "did:web:did.dev.simpl-europa.eu#gaia-x-key1"
+    },
+    "type": "VerifiableCredential"
+}

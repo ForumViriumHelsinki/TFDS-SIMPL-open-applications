@@ -1,0 +1,238 @@
+{
+    "SchemaConvertTestingShape": {
+        "type": "object",
+        "properties": {
+            "simpl:visibleSection": {
+                "type": "object",
+                "properties": {
+                    "simpl:producedBy": {
+                        "type": "string",
+                        "rdfType": "xsd:anyURI",
+                        "format": "uri",
+                        "description": "Provenance",
+                        "pattern": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+                    },
+                    "simpl:format": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Format under which the data is distributed (e.g. csv, xml, ?).",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:openApi": {
+                        "type": "string",
+                        "rdfType": "xsd:anyURI",
+                        "format": "uri",
+                        "description": "Schema of the dataset, depends on the type of data for JSON it would be JSON Schema Description that states what fields the data has and the types.",
+                        "pattern": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+                    },
+                    "simpl:additionalInfo": {
+                        "type": "string",
+                        "rdfType": "xsd:anyURI",
+                        "format": "uri",
+                        "description": "Additional Information about the dataset",
+                        "pattern": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+                    },
+                    "simpl:relatedDatasets": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Related datasets",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:targetUsers": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Target users",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:dataQuality": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Data Quality (to include metrics such as completeness, accuracy, timeliness and other)",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:encryption": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Encryption: Describes the encryption algorithms and keys used to secure the data",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:anonymization": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Anonymization/pseudonymization: Indicates whether sensitive information has been anonymized or pseudonymized to protect privacy",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+                    },
+                    "simpl:frontendOnlyRequiredProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "This is a property that's only marked as required on the sdCreator frontend"
+                    },
+                    "simpl:stringWithPattern": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A string property with a pattern",
+                        "pattern": "^[a-zA-Z]+$"
+                    },
+                    "simpl:integerProperty": {
+                        "type": "integer",
+                        "rdfType": "xsd:integer",
+                        "description": "An integer property"
+                    },
+                    "simpl:booleanProperty": {
+                        "type": "boolean",
+                        "rdfType": "xsd:boolean",
+                        "description": "A boolean property"
+                    },
+                    "simpl:dateProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:date",
+                        "format": "date",
+                        "description": "A date property"
+                    },
+                    "simpl:uriProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:anyURI",
+                        "format": "uri",
+                        "description": "A URI property"
+                    },
+                    "simpl:decimalProperty": {
+                        "type": "number",
+                        "rdfType": "xsd:decimal",
+                        "description": "A decimal property"
+                    },
+                    "simpl:fixedSetProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A property with a fixed set of values",
+                        "enum": [
+                            "value1",
+                            "value2",
+                            "value3"
+                        ]
+                    },
+                    "simpl:hiddenProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A property hidden in frontend"
+                    },
+                    "simpl:advancedSearchProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A property used for advanced search"
+                    },
+                    "simpl:frontendOnlyProperty": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A property required on frontend only"
+                    }
+                },
+                "child": true,
+                "rdfType": "simpl:VisibleSection",
+                "required": [
+                    "simpl:format",
+                    "simpl:stringWithPattern",
+                    "simpl:integerProperty",
+                    "simpl:booleanProperty",
+                    "simpl:dateProperty",
+                    "simpl:uriProperty",
+                    "simpl:decimalProperty",
+                    "simpl:fixedSetProperty",
+                    "simpl:hiddenProperty",
+                    "simpl:advancedSearchProperty",
+                    "simpl:frontendOnlyProperty"
+                ],
+                "description": "A section that has properties that'll be visible"
+            },
+            "simpl:emptySection": {
+                "type": "object",
+                "properties": {
+                    "simpl:license": {
+                        "type": "string",
+                        "rdfType": "xsd:anyURI",
+                        "format": "uri",
+                        "description": "URL to the used license",
+                        "pattern": "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,15}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)",
+                        "minLength": 1,
+                        "maxLength": 255
+                    },
+                    "simpl:currency": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Price and conditions",
+                        "enum": [
+                            "BGN",
+                            "EUR",
+                            "CZK",
+                            "DKK",
+                            "HUF",
+                            "PLN",
+                            "RON",
+                            "SEK"
+                        ]
+                    },
+                    "simpl:price": {
+                        "type": "number",
+                        "rdfType": "xsd:decimal",
+                        "description": "Price and conditions",
+                        "minimum": 0,
+                        "maximum": 99999999
+                    },
+                    "simpl:priceType": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Price Type",
+                        "enum": [
+                            "free",
+                            "commercial"
+                        ]
+                    }
+                },
+                "child": true,
+                "rdfType": "simpl:EmptySection",
+                "required": [
+                    "simpl:license",
+                    "simpl:currency",
+                    "simpl:price",
+                    "simpl:priceType"
+                ],
+                "description": "A section that has properties that'll be hidden"
+            },
+            "simpl:hiddenSection": {
+                "type": "object",
+                "properties": {
+                    "simpl:offeringType": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "Offering type using for search",
+                        "enum": [
+                            "application",
+                            "data",
+                            "infrastructure"
+                        ]
+                    },
+                    "simpl:name": {
+                        "type": "string",
+                        "rdfType": "xsd:string",
+                        "description": "A short text title for the dataset/application/infrastructure",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$",
+                        "minLength": 1,
+                        "maxLength": 255
+                    }
+                },
+                "child": true,
+                "rdfType": "simpl:HiddenSection",
+                "required": [
+                    "simpl:offeringType",
+                    "simpl:name"
+                ],
+                "description": "A section that'll be hidden"
+            }
+        },
+        "rdfType": "simpl:SchemaConvertTesting",
+        "required": [
+            "simpl:visibleSection",
+            "simpl:emptySection",
+            "simpl:hiddenSection"
+        ]
+    }
+}
