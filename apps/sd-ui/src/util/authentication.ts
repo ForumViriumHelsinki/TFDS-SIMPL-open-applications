@@ -66,7 +66,7 @@ export const setNewPkceCodeVerifier = (ctx: APIContext) => {
   return pkceCodeVerifier;
 };
 
-export const setNewTokenCookie = async (
+export const setNewTokenCookie = (
   ctx: APIContext,
   tokenName: string,
   token: string,
