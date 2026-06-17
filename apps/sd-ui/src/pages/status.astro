@@ -1,0 +1,18 @@
+---
+// @ts-nocheck
+// Typescript nocheck required, because of this issue with imported Vue components:
+// https://github.com/withastro/language-tools/issues/649
+import PageHeader from '@/components/PageHeader.vue';
+import Layout from '@/layouts/Layout.astro';
+import { SStatusMessage } from '@simpl/vue-components';
+---
+
+<Layout title="SIMPL UI status">
+  <main>
+    <PageHeader title="SD UI status" />
+    <SStatusMessage id="status-page-message" client:only="vue" title="Status is OK" variant="success" closeable={false}>
+      If this message has a colored border on the left, and an icon, then the UI is properly
+      loaded.
+    </SStatusMessage>
+  </main>
+</Layout>

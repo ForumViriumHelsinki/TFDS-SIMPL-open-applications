@@ -1,0 +1,9 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import ResourceDescriptionCreationWizardWrapper from '@/components/ResourceDescriptionWizardWrapper.vue';
+const schemaId = Astro.params.schemaId;
+---
+
+<Layout title="Create resource description" mainClass="relative">
+  <ResourceDescriptionCreationWizardWrapper schema-id={schemaId} client:only />
+</Layout>

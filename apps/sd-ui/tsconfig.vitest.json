@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.src.json",
+  "include": ["test/**/*.spec.ts", "env.d.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vitest.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "lib": [],
+    "types": ["node", "jsdom"]
+  }
+}

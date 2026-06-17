@@ -1,0 +1,444 @@
+{
+  "DataOfferingShape": {
+    "type": "object",
+    "properties": {
+      "simpl:dataProperties": {
+        "type": "object",
+        "properties": {
+          "simpl:producedBy": {
+            "title": "Produced by",
+            "type": "string",
+            "rdfType": "xsd:anyURI",
+            "format": "uri",
+            "description": "Provenance",
+            "pattern": "^([Hh][Tt][Tt][Pp][Ss]?):\\/\\/(?:www\\.)?[A-Za-z0-9][-A-Za-z0-9@:%_\\+~#=\\.]{0,255}\\.[A-Za-z0-9()]{1,6}\\b(?:[-A-Za-z0-9()@:%_\\+.~#?&/=]*)$"
+          },
+          "simpl:format": {
+            "title": "Format",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Format under which the data is distributed (e.g. csv, xml, …).",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          },
+          "simpl:openApi": {
+            "title": "Open api",
+            "type": "string",
+            "rdfType": "xsd:anyURI",
+            "format": "uri",
+            "description": "Schema of the dataset, depends on the type of data for JSON it would be JSON Schema Description that states what fields the data has and the types.",
+            "pattern": "^([Hh][Tt][Tt][Pp][Ss]?):\\/\\/(?:www\\.)?[A-Za-z0-9][-A-Za-z0-9@:%_\\+~#=\\.]{0,255}\\.[A-Za-z0-9()]{1,6}\\b(?:[-A-Za-z0-9()@:%_\\+.~#?&/=]*)$"
+          },
+          "simpl:additionalInfo": {
+            "title": "Additional info",
+            "type": "string",
+            "rdfType": "xsd:anyURI",
+            "format": "uri",
+            "description": "Additional Information about the dataset",
+            "pattern": "^([Hh][Tt][Tt][Pp][Ss]?):\\/\\/(?:www\\.)?[A-Za-z0-9][-A-Za-z0-9@:%_\\+~#=\\.]{0,255}\\.[A-Za-z0-9()]{1,6}\\b(?:[-A-Za-z0-9()@:%_\\+.~#?&/=]*)$"
+          },
+          "simpl:relatedDatasets": {
+            "title": "Related datasets",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Related datasets",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          },
+          "simpl:targetUsers": {
+            "title": "Target users",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Target users",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          },
+          "simpl:dataQuality": {
+            "title": "Data quality",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Data Quality (to include metrics such as completeness, accuracy, timeliness and other)",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          },
+          "simpl:encryption": {
+            "title": "Encryption",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Encryption: Describes the encryption algorithms and keys used to secure the data",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          },
+          "simpl:anonymization": {
+            "title": "Anonymization",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Anonymization/pseudonymization: Indicates whether sensitive information has been anonymized or pseudonymized to protect privacy",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:DataProperties",
+        "required": [
+          "simpl:format"
+        ],
+        "title": "Data properties",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:edcConnector": {
+        "type": "object",
+        "properties": {
+          "simpl:providerEndpointURL": {
+            "title": "Provider endpoint u r l",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Provider endpoint url"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:EdcConnector",
+        "required": [
+          "simpl:providerEndpointURL"
+        ],
+        "title": "Edc connector",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:generalServiceProperties": {
+        "type": "object",
+        "properties": {
+          "simpl:name": {
+            "title": "Name",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "A short text title for the dataset/application/infrastructure",
+            "pattern": "^(.|\\s)*[a-zA-Z]+(.|\\s)*$",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "simpl:description": {
+            "title": "Description",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "A description for the dataset/application/infrastructure",
+            "pattern": "^(.|\\s)*[a-zA-Z]+(.|\\s)*$",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "simpl:serviceAccessPoint": {
+            "title": "Service access point",
+            "type": "string",
+            "rdfType": "xsd:anyURI",
+            "format": "uri",
+            "description": "The location where the dataset/application/infrastructure can be found (likely an endpoint URL)",
+            "pattern": "^([Hh][Tt][Tt][Pp][Ss]?):\\/\\/(?:www\\.)?[A-Za-z0-9][-A-Za-z0-9@:%_\\+~#=\\.]{0,255}\\.[A-Za-z0-9()]{1,6}\\b(?:[-A-Za-z0-9()@:%_\\+.~#?&/=]*)$"
+          },
+          "simpl:keywords": {
+            "title": "Keywords",
+            "type": "array",
+            "maxItems": 16,
+            "items": {
+              "title": "Item",
+              "type": "string",
+              "rdfType": "xsd:string",
+              "minLength": 1
+            },
+            "description": "Keywords",
+            "pattern": "^(.|\\s)*[a-zA-Z]+(.|\\s)*$"
+          },
+          "simpl:inLanguage": {
+            "title": "In language",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Language (of the metadata, like the title, description)",
+            "enum": [
+              "bg",
+              "hr",
+              "cs",
+              "da",
+              "nl",
+              "en",
+              "et",
+              "fi",
+              "fr",
+              "de",
+              "el",
+              "hu",
+              "ga",
+              "it",
+              "lv",
+              "lt",
+              "mt",
+              "pl",
+              "pt",
+              "ro",
+              "sk",
+              "sl",
+              "es",
+              "sv"
+            ]
+          },
+          "simpl:offeringType": {
+            "title": "Offering type",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Offering type using for search",
+            "enum": [
+              "application",
+              "data",
+              "infrastructure"
+            ]
+          },
+          "simpl:sharingMethodId": {
+            "title": "Sharing method id",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Sharing Method Id type using for Resource Address Template"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:GeneralServiceProperties",
+        "required": [
+          "simpl:name",
+          "simpl:description",
+          "simpl:serviceAccessPoint",
+          "simpl:inLanguage",
+          "simpl:offeringType"
+        ],
+        "title": "General service properties",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:assetProperties": {
+        "type": "object",
+        "properties": {
+          "simpl:providerDataAddress": {
+            "title": "Provider data address",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Provider Data address"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:AssetProperties",
+        "title": "Asset properties",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:providerInformation": {
+        "type": "object",
+        "properties": {
+          "simpl:providedBy": {
+            "title": "Provided by",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "A reference to ID of the dataset/application/infrastructure provider"
+          },
+          "simpl:contact": {
+            "title": "Contact",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Who to contact in case of questions/issues",
+            "pattern": "^[\\w\\-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+          },
+          "simpl:signature": {
+            "title": "Signature",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "A digital signature that ensures that the provider is the one that uploaded the Self-description",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9\\s]*$"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:ProviderInformation",
+        "required": [
+          "simpl:providedBy",
+          "simpl:contact",
+          "simpl:signature"
+        ],
+        "title": "Provider information",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:offeringPrice": {
+        "type": "object",
+        "properties": {
+          "simpl:price": {
+            "title": "Price",
+            "type": "number",
+            "rdfType": "xsd:decimal",
+            "description": "Price and conditions",
+            "minimum": 0,
+            "maximum": 99999999999
+          },
+          "simpl:priceType": {
+            "title": "Price type",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Price Type",
+            "enum": [
+              "free",
+              "commercial"
+            ]
+          },
+          "simpl:license": {
+            "title": "License",
+            "type": "string",
+            "rdfType": "xsd:anyURI",
+            "format": "uri",
+            "description": "URL to the used license",
+            "pattern": "^([Hh][Tt][Tt][Pp][Ss]?):\\/\\/(?:www\\.)?[A-Za-z0-9][-A-Za-z0-9@:%_\\+~#=\\.]{0,255}\\.[A-Za-z0-9()]{1,6}\\b(?:[-A-Za-z0-9()@:%_\\+.~#?&/=]*)$",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "simpl:currency": {
+            "title": "Currency",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Price and conditions",
+            "enum": [
+              "BGN",
+              "EUR",
+              "CZK",
+              "DKK",
+              "HUF",
+              "PLN",
+              "RON",
+              "SEK"
+            ]
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:OfferingPrice",
+        "required": [
+          "simpl:price",
+          "simpl:priceType",
+          "simpl:license",
+          "simpl:currency"
+        ],
+        "title": "Offering price",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:servicePolicy": {
+        "type": "object",
+        "properties": {
+          "simpl:access-policy": {
+            "title": "Access-policy",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Access policy to define who can access the dataset",
+            "pattern": "[:,\\{\\}\\[\\]]|(\".*?\")|('.*?')|[-\\w.]+"
+          },
+          "simpl:usage-policy": {
+            "title": "Usage-policy",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Usage policy to define how a dataset can be used",
+            "pattern": "[:,\\{\\}\\[\\]]|(\".*?\")|('.*?')|[-\\w.]+"
+          },
+          "simpl:dataProtectionRegime": {
+            "title": "Data protection regime",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Indicates compliance with relevant data protection regulations and standards",
+            "pattern": "[:,\\{\\}\\[\\]]|(\".*?\")|('.*?')|[-\\w.]+"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:ServicePolicy",
+        "required": [
+          "simpl:access-policy",
+          "simpl:usage-policy"
+        ],
+        "title": "Service policy",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:contractTemplate": {
+        "type": "object",
+        "properties": {
+          "simpl:contractTemplateDocument": {
+            "title": "Contract template document",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Indicates Contract Template Document",
+            "enum": [
+              "Contract Template 1",
+              "Contract Template 2",
+              "Contract Template 3"
+            ]
+          },
+          "simpl:contractTemplateHashValue": {
+            "title": "Contract template hash value",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Indicates HASH VALUE"
+          },
+          "simpl:contractTemplateHashAlg": {
+            "title": "Contract template hash alg",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Indicates HASH ALGORITHM"
+          },
+          "simpl:contractTemplateURL": {
+            "title": "Contract template u r l",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "URL"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:ContractTemplate",
+        "required": [
+          "simpl:contractTemplateDocument",
+          "simpl:contractTemplateHashValue",
+          "simpl:contractTemplateHashAlg",
+          "simpl:contractTemplateURL"
+        ],
+        "title": "Contract template",
+        "description": "Basic classification of the service as per provision type and service model."
+      },
+      "simpl:edcRegistration": {
+        "type": "object",
+        "properties": {
+          "simpl:contractDefinitionId": {
+            "title": "Contract definition id",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Unique identifier of contract definition"
+          },
+          "simpl:servicePolicyId": {
+            "title": "Service policy id",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Unique identifier of service policy"
+          },
+          "simpl:accessPolicyId": {
+            "title": "Access policy id",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Unique identifier of access policy"
+          },
+          "simpl:assetId": {
+            "title": "Asset id",
+            "type": "string",
+            "rdfType": "xsd:string",
+            "description": "Unique identifier of asset"
+          }
+        },
+        "child": true,
+        "rdfType": "simpl:EdcRegistration",
+        "required": [
+          "simpl:contractDefinitionId",
+          "simpl:servicePolicyId",
+          "simpl:accessPolicyId",
+          "simpl:assetId"
+        ],
+        "title": "Edc registration",
+        "description": "Basic classification of the service as per provision type and service model."
+      }
+    },
+    "rdfType": "simpl:DataOffering",
+    "required": [
+      "simpl:dataProperties",
+      "simpl:edcConnector",
+      "simpl:generalServiceProperties",
+      "simpl:assetProperties",
+      "simpl:providerInformation",
+      "simpl:offeringPrice",
+      "simpl:servicePolicy",
+      "simpl:contractTemplate",
+      "simpl:edcRegistration"
+    ]
+  }
+}

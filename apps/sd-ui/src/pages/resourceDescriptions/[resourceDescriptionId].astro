@@ -1,0 +1,12 @@
+---
+import ResourceDescriptionDetailsOverlay from '@/components/ResourceDescriptionDetailsOverlay.vue';
+import Layout from '@/layouts/Layout.astro';
+
+const id = Astro.params.resourceDescriptionId;
+const hideActions = Astro.url.searchParams.get('hideActions') === 'true';
+const returnUrl = Astro.url.searchParams.get('returnUrl') ?? undefined;
+---
+
+<Layout title="Resource description" mainClass="relative">
+  <ResourceDescriptionDetailsOverlay resourceDescriptionId={id} hideActions={hideActions} returnUrl={returnUrl} client:only />
+</Layout>
