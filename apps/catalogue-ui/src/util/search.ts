@@ -12,7 +12,7 @@ export const transformSearchResultItems = (data: RawSearchAPIResults): SearchAPI
 export const filterAdvancedSearchSchemas = (
   schemasResponse: SearchSchemasCategorized
 ): SSelectOptions => {
-  return schemasResponse.Service?.map((schemaName) => ({
+  return schemasResponse?.Service?.map((schemaName) => ({
     label: schemaName.replace(/\.ttl/, ''),
     value: schemaName,
   })) || [];
