@@ -12,8 +12,24 @@ import {
   shouldDeleteCookiesToLogout,
 } from './util/authentication';
 import { createAPIError } from '@/util/errors';
+import { getEnv } from '@/util/getEnv';
 
 export const onRequest = async (ctx: APIContext, next: MiddlewareNext) => {
+  // Runtime Domain Validation
+  const allowedDomainsStr = getEnv('PUBLIC_ALLOWED_DOMAINS') || '';
+  if (allowedDomainsStr) {
+    const allowedDomains = allowedDomainsStr.split(',').map(d => d.trim().replace('**.', ''));
+    const forwardedHost = ctx.request.headers.get('x-forwarded-host') || ctx.url.hostname;
+    
+    const isAllowed = allowedDomains.some(domain => 
+      forwardedHost === domain || forwardedHost.endsWith(`.${domain}`) || domain === '**'
+    );
+
+    if (!isAllowed) {
+      return new Response('Forbidden: Host not allowed', { status: 403 });
+    }
+  }
+
   if (ctx.url.pathname.startsWith('/status') || !isAuthenticationEnabled()) {
     return setCacheHeaders(await next());
   }
