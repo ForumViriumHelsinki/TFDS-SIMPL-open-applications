@@ -24,7 +24,11 @@ export const useResourceSharingMethodStore = defineStore('resourceSharingMethod'
 
     sharingMethodId.value = resourceDescriptionStore.resourceDescriptionSharingMethodId;
     offeringType.value = resourceDescriptionStore.resourceDescriptionOfferingType;
+    resourceAddressForm.value.data = {
+      type: sharingMethodId.value,
+    };
     await loadResourceAddressTemplates();
+  };
   };
 
   const resourceAddressTemplates = ref([] as any);
