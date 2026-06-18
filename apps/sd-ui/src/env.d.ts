@@ -2,6 +2,7 @@
 /// <reference types="astro/client" />
 
 interface ImportMetaEnv {
+  PUBLIC_BASE_URL: string;
   PUBLIC_AUTH_KEYCLOAK_SERVER_URL: string;
   PUBLIC_AUTH_KEYCLOAK_REALM: string;
   PUBLIC_AUTH_KEYCLOAK_CLIENT_ID: string;

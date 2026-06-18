@@ -7,6 +7,7 @@ import {
 import type { APIContext, AstroCookies } from 'astro';
 import { createAPIError } from '@/util/errors';
 import type { KeycloakError, KeycloakTokenResponse } from '@/types/authentication';
+import { getPublicEnv } from '@/util/getEnv';
 
 export const ACCESS_TOKEN_COOKIE = 'token';
 export const REFRESH_TOKEN_COOKIE = 'refreshToken';
@@ -120,7 +121,15 @@ export const setTokenCookies = (ctx: APIContext, response: KeycloakTokenResponse
 export const redirectToLogin = async (ctx: APIContext, redirectUrl?: string) => {
   const pkceCodeVerifier = setNewPkceCodeVerifier(ctx);
 
-  const loginUrl = await createLoginURL(redirectUrl ?? ctx.url.href, pkceCodeVerifier);
+  const env = getPublicEnv();
+  const baseUrl = env.PUBLIC_BASE_URL || ctx.url.origin;
+  
+  let finalRedirectUrl = redirectUrl ?? ctx.url.href;
+  if (finalRedirectUrl.startsWith('http://localhost') || finalRedirectUrl.startsWith('https://localhost')) {
+    finalRedirectUrl = finalRedirectUrl.replace(/^https?:\/\/localhost(:\d+)?/, baseUrl);
+  }
+
+  const loginUrl = await createLoginURL(finalRedirectUrl, pkceCodeVerifier);
   return new Response('', {
     status: 302,
     headers: {
