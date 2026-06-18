@@ -231,10 +231,18 @@ export async function handleOAuthCallback(ctx: APIContext): Promise<Response | n
     );
   }
 
+  const env = getPublicEnv();
+  const baseUrl = env.PUBLIC_BASE_URL || ctx.url.origin;
+  
+  let redirectUri = ctx.url.href;
+  if (redirectUri.startsWith('http://localhost') || redirectUri.startsWith('https://localhost')) {
+    redirectUri = redirectUri.replace(/^https?:\/\/localhost(:\d+)?/, baseUrl);
+  }
+
   const data = await getAccessToken(
     ctx.url.searchParams.get('code')!,
     pkceCodeVerifier,
-    ctx.url.href
+    redirectUri
   );
   if (isKeycloakError(data)) {
     return setCacheHeaders(createAuthErrorResponse(data));
