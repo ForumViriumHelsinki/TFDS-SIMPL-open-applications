@@ -14,7 +14,7 @@ export default defineConfig({
   security: {
     checkOrigin: false,
     // Trust all proxy headers natively; actual validation happens at runtime in middleware.ts
-    allowedDomains: ['*']
+    allowedDomains: [{ hostname: '*' }]
   },
   adapter: node({
     mode: 'standalone',
