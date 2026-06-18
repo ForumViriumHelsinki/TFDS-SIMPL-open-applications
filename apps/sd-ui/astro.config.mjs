@@ -8,6 +8,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   integrations: [vue({ appEntrypoint: '/src/pages/_app' })],
   output: 'server',
+  server: {
+    host: true
+  },
   adapter: node({
     mode: 'standalone',
   }),
