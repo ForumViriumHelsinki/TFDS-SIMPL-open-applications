@@ -4,10 +4,6 @@ import { defineConfig } from 'astro/config';
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
-const allowedDomains = process.env.PUBLIC_ALLOWED_DOMAINS
-  ? process.env.PUBLIC_ALLOWED_DOMAINS.split(',').map((d) => d.trim().replace('**.', '*.'))
-  : [];
-
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue({ appEntrypoint: '/src/pages/_app' })],
@@ -17,10 +13,8 @@ export default defineConfig({
   },
   security: {
     checkOrigin: false,
-    allowedDomains: allowedDomains
-  },
-  image: {
-    domains: allowedDomains.map(d => d.replace('*.', ''))
+    // Trust all proxy headers natively; actual validation happens at runtime in middleware.ts
+    allowedDomains: ['*']
   },
   adapter: node({
     mode: 'standalone',
