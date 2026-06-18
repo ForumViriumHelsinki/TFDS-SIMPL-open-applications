@@ -16,7 +16,7 @@ import { getPublicEnv } from '@/util/getEnv';
 
 export const onRequest = async (ctx: APIContext, next: MiddlewareNext) => {
   // Bypass domain validation and auth for Kubernetes health probes
-  if (ctx.url.pathname.startsWith('/status')) {
+  if (ctx.url.pathname === '/status' || ctx.url.pathname === '/status/') {
     return setCacheHeaders(await next());
   }
 
