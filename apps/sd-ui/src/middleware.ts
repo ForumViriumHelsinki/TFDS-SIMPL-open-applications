@@ -15,6 +15,11 @@ import { createAPIError } from '@/util/errors';
 import { getPublicEnv } from '@/util/getEnv';
 
 export const onRequest = async (ctx: APIContext, next: MiddlewareNext) => {
+  // Bypass domain validation and auth for Kubernetes health probes
+  if (ctx.url.pathname === '/status' || ctx.url.pathname === '/status/') {
+    return setCacheHeaders(await next());
+  }
+
   // Runtime Domain Validation
   const allowedDomainsStr = getPublicEnv().PUBLIC_ALLOWED_DOMAINS || '';
   if (allowedDomainsStr) {
@@ -30,7 +35,7 @@ export const onRequest = async (ctx: APIContext, next: MiddlewareNext) => {
     }
   }
 
-  if (ctx.url.pathname.startsWith('/status') || !isAuthenticationEnabled()) {
+  if (!isAuthenticationEnabled()) {
     return setCacheHeaders(await next());
   }
   if (shouldDeleteCookiesToLogout(ctx.url)) {
